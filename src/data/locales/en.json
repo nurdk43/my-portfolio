@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "education": "Education",
+    "experience": "Experience",
+    "interests": "Interests"
+  },
+  "skills": {
+    "title": "My Skills"
+  },
+  "projects": {
+    "title": "My Projects",
+    "github": "GitHub",
+    "liveDemo": "Live Demo"
+  },
+  "contact": {
+    "title": "Contact",
+    "contactMe": "Contact Me",
+    "name": "Name",
+    "surname": "Surname",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessage": "Send Message",
+    "phone": "Phone",
+    "location": "Location",
+    "messageSent": "Message sent!",
+    "messageDelivered": "Sent!",
+    "messageDescription": "I will get back to you as soon as possible."
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "tr": "Chatting Application",
+      "en": "Chatting Application"
+    },
+    "description": {
+      "tr": "Gerçek zamanlı mesajlaşma uygulaması. Kullanıcıların anlık olarak sohbet edebilmesini sağlar.",
+      "en": "Real-time messaging application. Allows users to chat instantly."
+    },
+    "image": "/images/chat.jpg",
+    "technologies": [
+      "Dart",
+      "React",
+      "Notecs",
+      "PostgreSQL"
+    ],
+    "category": "Mobil",
+    "githubUrl": "https://github.com/jusiann/Chatting-Application/",
+    "demoUrl": null,
+    "isFeatured": false
+  },
+  {
+    "id": 2,
+    "title": {
+      "tr": "Lezzet Sepeti",
+      "en": "Lezzet Sepeti"
+    },
+    "description": {
+      "tr": "Modern bir yemek sipariş uygulaması. Kullanıcıların favori yemeklerini seçip sipariş verebileceği, sepetlerini yönetebilecekleri ve geçmiş siparişlerini görüntüleyebilecekleri kapsamlı bir e-ticaret platformu.",
+      "en": "A modern food ordering application. A comprehensive e-commerce platform where users can select their favorite meals, place orders, manage their carts, and view their order history."
+    },
+    "image": "/images/anaresim.jpg",
+    "technologies": [
+      "React",
+      "React Router DOM",
+      "Vite"
+    ],
+    "category": "Web",
+    "githubUrl": "https://github.com/nurdk43/lezzet-sepeti",
+    "demoUrl": null,
+    "isFeatured": false
+  },
+  {
+    "id": 3,
+    "title": {
+      "tr": "Tur Rezervasyon Uygulaması",
+      "en": "Tour Reservation Application"
+    },
+    "description": {
+      "tr": "Yurt içi ve yurt dışı turlar için rezervasyon yapabileceğiniz Java Swing tabanlı masaüstü uygulaması. Tarih seçimi, katılımcı bilgileri girişi ve ödeme işlemleri içerir.",
+      "en": "Desktop application built with Java Swing for booking domestic and international tours. Includes date selection, participant information entry, and payment processing."
+    },
+    "image": "/images/tur.jpg",
+    "technologies": [
+      "Java",
+      "Java GUI",
+      "Java Swing",
+      "JCalendar"
+    ],
+    "category": "Mobil",
+    "githubUrl": "https://github.com/nurdk43/Tur-Rezervasyon-App-",
+    "demoUrl": null,
+    "isFeatured": false
+  },
+  {
+    "id": 4,
+    "title": {
+      "tr": "Routella",
+      "en": "Routella"
+    },
+    "description": {
+      "tr": "Rota planlama ve navigasyon uygulaması.",
+      "en": "Route planning and navigation application."
+    },
+    "image": "/images/routella.jpg",
+    "technologies": [
+      "Dart",
+      "Flutter"
+    ],
+    "category": "Mobil",
+    "githubUrl": "https://github.com/nurdk43/Routella",
+    "demoUrl": null,
+    "isFeatured": false
+  }
+]

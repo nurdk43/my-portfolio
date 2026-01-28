@@ -1,0 +1,57 @@
+{
+  "name": "Ayşenur Dik",
+  "title": "Software Developer",
+  "bio": {
+    "tr": "Frontend, backend ve full stack geliştirme alanlarında çalışan, modern teknolojilerle kullanıcı dostu web ve mobil uygulamalar geliştirmeyi seven bir yazılım geliştiriciyim.",
+    "en": "I am a software developer working in frontend, backend, and full stack development, who loves building user-friendly web and mobile applications with modern technologies."
+  },
+  "email": "dikaysenur4335@gmail.com",
+  "location": "İstanbul / Türkiye",
+  "social": {
+    "github": "https://github.com/nurdk43",
+    "linkedin": "https://www.linkedin.com/in/ay%C5%9Fenur-dik-097a37295/"
+  },
+  "cvFile": "/cv.pdf",
+  "hakkimda": {
+    "baslik": {
+      "tr": "Hakkımda",
+      "en": "About Me"
+    },
+    "metin": {
+      "tr": "Merhaba! Ben Ayşenur Dik, yazılım geliştirme alanında çalışan bir öğrenciyim. Frontend, backend ve full stack geliştirme alanlarında projeler geliştirerek kendimi sürekli geliştiriyorum.\n\nHTML, CSS, JavaScript ve React ile modern web arayüzleri, Node.js ve veritabanları ile backend sistemleri, Flutter ile mobil uygulamalar geliştiriyorum. Ayrıca Java, C++, Python ve MySQL konularında da deneyim sahibiyim.\n\nHer projede yeni şeyler öğrenmeyi ve kullanıcı dostu uygulamalar oluşturmayı hedefliyorum. Teknoloji ve yazılım geliştirme tutkumla sürekli öğrenmeye devam ediyorum.",
+      "en": "Hello! I'm Ayşenur Dik, a student working in the field of software development. I continuously improve myself by developing projects in frontend, backend, and full stack development.\n\nI build modern web interfaces with HTML, CSS, JavaScript, and React, backend systems with Node.js and databases, and mobile applications with Flutter. I also have experience in Java, C++, Python, and MySQL.\n\nIn every project, I aim to learn new things and create user-friendly applications. I continue learning with my passion for technology and software development."
+    },
+    "egitim": [
+      {
+        "okul": {
+          "tr": "İstanbul Rumeli Üniversitesi",
+          "en": "Istanbul Rumeli University"
+        },
+        "bolum": {
+          "tr": "Bilgisayar Mühendisliği",
+          "en": "Computer Engineering"
+        },
+        "yillar": {
+          "tr": "2023 - Devam Ediyor",
+          "en": "2023 - Ongoing"
+        }
+      }
+    ],
+    "ilgiAlanlari": {
+      "tr": [
+        "Frontend Geliştirme",
+        "Backend Geliştirme",
+        "Full Stack Geliştirme",
+        "Mobil Uygulama Geliştirme",
+        "Açık Kaynak Projeler"
+      ],
+      "en": [
+        "Frontend Development",
+        "Backend Development",
+        "Full Stack Development",
+        "Mobile App Development",
+        "Open Source Projects"
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "category": {
+      "tr": "Web Geliştirme",
+      "en": "Web Development"
+    },
+    "items": [
+      { "name": "HTML", "level": 90, "icon": "" },
+      { "name": "CSS", "level": 85, "icon": "" },
+      { "name": "JavaScript", "level": 80, "icon": "" },
+      { "name": "React", "level": 90, "icon": "" }
+    ]
+  },
+  {
+    "category": {
+      "tr": "Programlama Dilleri",
+      "en": "Programming Languages"
+    },
+    "items": [
+      { "name": "Java", "level": 85, "icon": "" },
+      { "name": "Python", "level": 70, "icon": "" },
+      { "name": "C++", "level": 75, "icon": "" }
+    ]
+  },
+  {
+    "category": {
+      "tr": "Veritabanı",
+      "en": "Database"
+    },
+    "items": [
+      { "name": "MySQL", "level": 80, "icon": "" },
+      { "name": "MongoDB", "level": 50, "icon": "" }
+    ]
+  },
+  {
+    "category": {
+      "tr": "Mobil Uygulama Geliştirme",
+      "en": "Mobile App Development"
+    },
+    "items": [
+      { "name": "Flutter", "level": 90, "icon": "" }
+    ]
+  }
+]
+
