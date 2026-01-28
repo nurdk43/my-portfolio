@@ -22,7 +22,7 @@ const ceviriler = {
 
 // Dil sağlayıcı bileşeni
 export const DilProvider = ({ children }) => {
-  const [dil, setDil] = useState('en')
+  const [dil, setDil] = useState('tr')
 
   // localStorage'dan dil al
   useEffect(() => {
