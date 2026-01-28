@@ -24,12 +24,9 @@ const ceviriler = {
 export const DilProvider = ({ children }) => {
   const [dil, setDil] = useState('tr')
 
-  // localStorage'dan dil al
+  // Sayfa açıldığında localStorage'ı Türkçe olarak ayarla
   useEffect(() => {
-    const kayitliDil = localStorage.getItem('language')
-    if (kayitliDil === 'tr' || kayitliDil === 'en') {
-      setDil(kayitliDil)
-    }
+    localStorage.setItem('language', 'tr')
   }, [])
 
   // Dil değişince kaydet
