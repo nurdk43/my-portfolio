@@ -1,5 +1,5 @@
 # Ayşenur Dik - Kişisel Portföy
-
+# (https://aysenurdik.vercel.app)
 ## Genel Bakış
 Frontend, backend ve full stack geliştirme alanlarında uzmanlaşmış bir yazılım geliştirici olan Ayşenur Dik'in projelerini, becerilerini ve bilgilerini sergileyen kişisel bir portföy web sitesidir. Modern ve kullanıcı dostu bir arayüzle tasarlanan bu uygulama, responsive tasarım sayesinde tüm cihazlarda sorunsuz çalışır.
 
