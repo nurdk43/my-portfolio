@@ -355,6 +355,32 @@ body {
   }
 }
 
+/* Daktilo başlık animasyonu */
+.daktilo-baslik {
+  display: inline-flex;
+  align-items: center;
+}
+
+.imlec {
+  color: #ec4899;
+  font-weight: 300;
+  animation: yanipSon 0.8s infinite;
+  margin-left: 2px;
+}
+
+@keyframes yanipSon {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
 .aciklama-metin {
   font-size: 20px;
   color: #4b5563;

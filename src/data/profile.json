@@ -1,6 +1,22 @@
 {
   "name": "Ayşenur Dik",
   "title": "Software Developer",
+  "titles": {
+    "tr": [
+      "Yazılım Geliştirici",
+      "Frontend Geliştirici",
+      "Backend Geliştirici",
+      "Mobil Uygulama Geliştirici",
+      "Full Stack Geliştirici"
+    ],
+    "en": [
+      "Software Developer",
+      "Frontend Developer",
+      "Backend Developer",
+      "Mobile App Developer",
+      "Full Stack Developer"
+    ]
+  },
   "bio": {
     "tr": "Frontend, backend ve full stack geliştirme alanlarında çalışan, modern teknolojilerle kullanıcı dostu web ve mobil uygulamalar geliştirmeyi seven bir yazılım geliştiriciyim.",
     "en": "I am a software developer working in frontend, backend, and full stack development, who loves building user-friendly web and mobile applications with modern technologies."
