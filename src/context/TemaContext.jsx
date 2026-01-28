@@ -17,13 +17,10 @@ export const TemaKullan = () => {
 export const TemaProvider = ({ children }) => {
   const [tema, setTema] = useState('light')
 
-  // Sayfa ilk yüklendiğinde dark class'ı temizle ve localStorage'dan tema al
+  // İlk yüklemede localStorage'ı temizle ve açık tema ile başla
   useEffect(() => {
+    localStorage.removeItem('theme')
     document.documentElement.classList.remove('dark')
-    const kayitliTema = localStorage.getItem('theme')
-    if (kayitliTema === 'dark') {
-      setTema('dark')
-    }
   }, [])
 
   // Tema değişince kaydet ve DOM'u güncelle
