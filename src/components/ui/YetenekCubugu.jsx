@@ -1,4 +1,5 @@
-// Yetenek İlerleme Çubuğu Bileşeni
+// Yetenek İlerleme Çubuğu Bileşeni - Hızlı animasyon
+import { motion } from 'framer-motion'
 
 export const YetenekCubugu = ({ seviye, isim }) => {
   return (
@@ -8,9 +9,18 @@ export const YetenekCubugu = ({ seviye, isim }) => {
       </div>
       <div className="progress-kapsayici">
         <div className="progress-cubuk">
-          <div className="progress-dolgu" style={{ width: `${seviye}%` }}>
+          <motion.div
+            className="progress-dolgu"
+            initial={{ width: 0 }}
+            animate={{ width: `${seviye}%` }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+              delay: 0.2
+            }}
+          >
             <span className="progress-yuzde">{seviye}%</span>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

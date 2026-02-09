@@ -3,6 +3,7 @@ import { DilKullan } from '../../context/DilContext.jsx'
 import projectsData from '../../data/projeler.json'
 import { ProjeKarti } from '../ui/ProjeKarti.jsx'
 import { Modal } from '../ui/Modal.jsx'
+import { motion } from 'framer-motion'
 
 export const Projeler = () => {
   const { dil, cevir } = DilKullan()
@@ -27,33 +28,67 @@ export const Projeler = () => {
   }
 
   return (
-    <section className="projeler-bolum">
+    <motion.section 
+      className="projeler-bolum"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="icerik-kapsayici">
-        <h2 className="bolum-baslik">{cevir('projects.title') || 'Projelerim'}</h2>
+        <motion.h2 
+          className="bolum-baslik"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          {cevir('projects.title') || 'Projelerim'}
+        </motion.h2>
 
-        <div className="filtre-butonlar">
-          {kategoriler.map((kategori) => (
-            <button
+        <motion.div 
+          className="filtre-butonlar"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          {kategoriler.map((kategori, index) => (
+            <motion.button
               key={kategori}
               onClick={() => setSeciliKategori(kategori)}
               className={`filtre-buton ${seciliKategori === kategori ? 'aktif' : ''}`}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, delay: 0.6 + index * 0.1 }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
             >
               {kategori}
-            </button>
+            </motion.button>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="projeler-grid">
-          {filtrelenmisProjeler.map((proje) => (
-            <ProjeKarti
+        <motion.div 
+          className="projeler-grid"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          {filtrelenmisProjeler.map((proje, index) => (
+            <motion.div
               key={proje.id}
-              proje={proje}
-              dil={dil}
-              cevir={cevir}
-              onClick={() => projeAc(proje)}
-            />
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
+              whileHover={{ y: -10 }}
+            >
+              <ProjeKarti
+                proje={proje}
+                dil={dil}
+                cevir={cevir}
+                onClick={() => projeAc(proje)}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
       {seciliProje && (
         <Modal
@@ -64,7 +99,7 @@ export const Projeler = () => {
           cevir={cevir}
         />
       )}
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,147 +1,105 @@
-# Ayşenur Dik - Kişisel Portföy
-# (https://aysenurdik.vercel.app)
-## Genel Bakış
-Frontend, backend ve full stack geliştirme alanlarında uzmanlaşmış bir yazılım geliştirici olan Ayşenur Dik'in projelerini, becerilerini ve bilgilerini sergileyen kişisel bir portföy web sitesidir. Modern ve kullanıcı dostu bir arayüzle tasarlanan bu uygulama, responsive tasarım sayesinde tüm cihazlarda sorunsuz çalışır.
+# 🌸 Ayşenur Dik - Kişisel Portföy
 
-## Özellikler
-- Tüm cihazlarda çalışan duyarlı (responsive) tasarım
-- Çoklu dil desteği (Türkçe ve İngilizce)
-- Açıklamalar ve bağlantılarla proje sergileme
-- Yeterlilik seviyeleriyle yetenekler bölümü
-- İletişim formu ve sosyal medya bağlantıları
-- Tema değiştirme (koyu/açık mod) desteği
-- Modern ve etkileşimli kullanıcı arayüzü
-- React Router DOM ile sayfa geçişleri
+> Modern, animasyonlu ve responsive kişisel portföy web sitesi
 
-## Kullanılan Teknolojiler
+[🔗 Canlı Demo](https://aysenurdik.vercel.app)
 
-- Frontend: React, JavaScript
-- Framework: Vite
-- Stil: CSS
-- Routing: React Router DOM
-- UI İkonları: Lucide React
-- Geliştirme Ortamı: Node.js
+## ✨ Özellikler
 
-## Proje Yapısı
+- 🎨 **Modern Tasarım** - Glassmorphism, gradient ve zarif tipografi
+- 🌙 **Tema Desteği** - Koyu/Açık mod ile göz dostu deneyim
+- 🌍 **Çoklu Dil** - Türkçe ve İngilizce dil desteği
+- 📱 **Responsive** - Tüm cihazlarda mükemmel görünüm
+- ✨ **Animasyonlar** - Framer Motion ile akıcı sayfa geçişleri ve shimmer efektleri
+- 💼 **Proje Vitrini** - Detaylı proje kartları ve modal görünüm
+- 📧 **İletişim Formu** - Doğrulama içeren modern form tasarımı
+- 📄 **CV İndirme** - Tek tıkla PDF indirme
+
+## 🛠️ Teknolojiler
+
+| Kategori | Teknoloji |
+|----------|-----------|
+| Frontend | React 18, JavaScript |
+| Build Tool | Vite |
+| Stil | CSS3, Tailwind CSS |
+| Animasyon | Framer Motion |
+| Routing | React Router DOM |
+| İkonlar | Lucide React |
+
+## 📁 Proje Yapısı
 
 ```
 my-portfolio/
 ├── public/
 │   ├── cv.pdf
 │   └── images/
-│       ├── anaresim.jpg
-│       ├── chat.jpg
-│       ├── portfolio.jpg
-│       ├── profil.jpg
-│       ├── routella.jpg
-│       └── tur.jpg
 ├── src/
 │   ├── components/
-│   │   ├── layout/
-│   │   │   ├── Footer.jsx
-│   │   │   ├── Layout.jsx
-│   │   │   └── Navbar.jsx
-│   │   ├── sections/
-│   │   │   ├── AnaSayfa.jsx
-│   │   │   ├── Hakkimda.jsx
-│   │   │   ├── Iletisim.jsx
-│   │   │   ├── Projeler.jsx
-│   │   │   └── Yetenekler.jsx
-│   │   ├── ui/
-│   │   │   ├── IletisimFormu.jsx
-│   │   │   ├── LanguageSwitcher.jsx
-│   │   │   ├── Modal.jsx
-│   │   │   ├── ProjeKarti.jsx
-│   │   │   ├── SocialLinks.jsx
-│   │   │   ├── ThemeToggle.jsx
-│   │   │   └── YetenekCubugu.jsx
-│   │   └── AppContent.jsx
-│   ├── context/
-│   │   ├── DilContext.jsx
-│   │   └── TemaContext.jsx
-│   ├── data/
-│   │   ├── locales/
-│   │   │   ├── en.json
-│   │   │   └── tr.json
-│   │   ├── profile.json
-│   │   ├── projeler.json
-│   │   └── yetenekler.json
-│   ├── App.css
+│   │   ├── layout/          # Navbar, Footer, Layout
+│   │   ├── sections/        # AnaSayfa, Hakkimda, Projeler, Yetenekler, Iletisim
+│   │   ├── ui/              # Yeniden kullanılabilir UI bileşenleri
+│   │   ├── AppContent.jsx
+│   │   └── PageTransition.jsx   # Sayfa geçiş animasyonları
+│   ├── context/             # Tema ve Dil context'leri
+│   ├── data/                # JSON veri dosyaları ve çeviriler
 │   ├── App.jsx
-│   ├── index.css
 │   └── main.jsx
-├── index.html
 ├── package.json
 └── vite.config.js
 ```
 
-### Ana Bileşenler
+## 🚀 Kurulum
 
-- **`App.jsx`**: Uygulamanın kök bileşeni, routing ve context sağlayıcılarını içerir
-- **`AppContent.jsx`**: Ana sayfa yapısını ve route tanımlarını içerir
-- **`Layout.jsx`**: Genel sayfa düzeni (Navbar ve Footer) sağlar
-- **Section Bileşenleri**: Ana sayfa bölümlerini tanımlar (AnaSayfa, Hakkimda, Projeler, Yetenekler, Iletisim)
-- **UI Bileşenleri**: Yeniden kullanılabilir kullanıcı arayüzü bileşenleri
-- **Context Bileşenleri**: Tema ve dil yönetimi için global durum sağlar
-- **Data Dosyaları**: Uygulama verilerini (projeler, yetenekler, profil bilgileri) içerir
+```bash
+# Depoyu klonla
+git clone https://github.com/nurdk43/my-portfolio.git
 
-## Kurulum ve Başlatma
+# Dizine geç
+cd my-portfolio
 
-1. Depoyu klonlayın:
-   ```bash
-   git clone <repository-url>
-   ```
+# Bağımlılıkları yükle
+npm install
 
-2. Proje dizinine gidin:
-   ```bash
-   cd my-portfolio
-   ```
+# Geliştirme sunucusunu başlat
+npm run dev
+```
 
-3. Bağımlılıkları yükleyin:
-   ```bash
-   npm install
-   ```
+Tarayıcıda aç: [http://localhost:5173](http://localhost:5173)
 
-4. Geliştirme sunucusunu başlatın:
-   ```bash
-   npm run dev
-   ```
+## 📜 Komutlar
 
-5. Tarayıcınızda şu adrese gidin:
-   [http://localhost:5173](http://localhost:5173)
+| Komut | Açıklama |
+|-------|----------|
+| `npm run dev` | Geliştirme sunucusunu başlatır |
+| `npm run build` | Üretim için derler |
+| `npm run preview` | Derlenmiş uygulamayı önizler |
 
-## Komut Dosyaları
+## 🎨 Öne Çıkan Özellikler
 
-- `npm run dev`: Geliştirme sunucusunu başlatır
-- `npm run build`: Projeyi üretim için derler (dist klasörüne)
-- `npm run preview`: Derlenmiş uygulamayı yerel sunucuda önizler
+### Sayfa Geçiş Animasyonları
+Framer Motion kullanılarak geliştirilmiş parıltılı (shimmer) sayfa geçişleri:
+- Blur efektli giriş/çıkış animasyonları
+- Radial gradient parıltı overlay
+- Akıcı scale ve opacity geçişleri
 
-## Veri Yönetimi
+### Responsive Tasarım
+- Mobil öncelikli tasarım yaklaşımı
+- Hamburger menü (mobil)
+- Esnek grid sistemleri
 
-Uygulama verileri JSON dosyaları aracılığıyla yönetilir:
+### Tema Sistemi
+- CSS değişkenleri ile kolay özelleştirme
+- LocalStorage ile tercih kaydetme
+- Otomatik sistem teması algılama
 
-- **`profile.json`**: Kişisel bilgiler, hakkımda, iletişim detayları ve sosyal medya bağlantıları
-- **`projeler.json`**: Gösterilen projelerin detayları (başlık, açıklama, teknolojiler, bağlantılar)
-- **`yetenekler.json`**: Yetenek kategorileri ve seviyeleri
-- **`locales/`**: Dil dosyaları (Türkçe ve İngilizce çeviriler)
+## 👩‍💻 Geliştirici
 
-## Özellikler
+**Ayşenur Dik**
 
-### Çoklu Dil Desteği
-Uygulama Türkçe ve İngilizce dillerinde kullanılabilir. Dil değişimi, dil değiştirme butonuyla yapılabilir.
+- 🔗 [GitHub](https://github.com/nurdk43)
+- 💼 [LinkedIn](https://linkedin.com/in/aysenurdik)
+- 📧 aysenurdik@outlook.com
 
-### Tema Değiştirme
-Koyu ve açık tema arasında geçiş yapabilen dinamik bir tema sistemi. Tercihler yerel depolamada saklanır.
+---
 
-### Projeler Bölümü
-Projeler kartlar halinde sergilenir. Her proje kartı, başlık, açıklama, kullanılan teknolojiler ve GitHub/demo bağlantılarını içerir.
-
-### Yetenekler Bölümü
-Yetenekler kategorilere ayrılmış şekilde, ilerleme çubukları ile gösterilir.
-
-### İletişim Formu
-Doğrulama içeren iletişim formu ve sosyal medya bağlantıları.
-
-## Geliştirme
-
-Uygulama React ile geliştirilmiş modern bir SPA (Single Page Application) yapısındadır. Vite ile hızlı geliştirme ve derleme sağlanır.
+<p align="center">Built with 💕 by Ayşenur Dik</p>

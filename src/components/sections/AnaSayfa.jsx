@@ -3,6 +3,7 @@ import { Download } from 'lucide-react'
 import { SocialLinks } from '../ui/SocialLinks.jsx'
 import { DilKullan } from '../../context/DilContext.jsx'
 import profileData from '../../data/profile.json'
+import { motion } from 'framer-motion'
 
 export const AnaSayfa = () => {
   const { dil, cevir } = DilKullan()
@@ -54,24 +55,71 @@ export const AnaSayfa = () => {
   }, [gosterilenMetin, siliyor, baslikIndex, dil, basliklar])
 
   return (
-    <section className="ana-bolum">
+    <motion.section 
+      className="ana-bolum"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="icerik-kapsayici">
-        <div className="metin-kapsayici">
-          <h1 className="baslik-bir">{profileData.name}</h1>
-          <h2 className="baslik-iki daktilo-baslik">
+        <motion.div 
+          className="metin-kapsayici"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <motion.h1 
+            className="baslik-bir"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            {profileData.name}
+          </motion.h1>
+          <motion.h2 
+            className="baslik-iki daktilo-baslik"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
             {gosterilenMetin}
             <span className="imlec">|</span>
-          </h2>
-          <p className="aciklama-metin">{profileData.bio[dil]}</p>
-          <SocialLinks sosyalMedya={profileData.social} email={profileData.email} />
-          <div className="cv-kapsayici">
-            <a href={profileData.cvFile} download="Ayşenur_Dik_CV.pdf" className="cv-indir-buton">
+          </motion.h2>
+          <motion.p 
+            className="aciklama-metin"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            {profileData.bio[dil]}
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+          >
+            <SocialLinks sosyalMedya={profileData.social} email={profileData.email} />
+          </motion.div>
+          <motion.div 
+            className="cv-kapsayici"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+          >
+            <motion.a 
+              href={profileData.cvFile} 
+              download="Ayşenur_Dik_CV.pdf" 
+              className="cv-indir-buton"
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0,0,0,0.2)" }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
               <Download className="indir-ikon" />
               {cevir('hero.downloadCV') || cevir('cvIndir')}
-            </a>
-          </div>
-        </div>
+            </motion.a>
+          </motion.div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }

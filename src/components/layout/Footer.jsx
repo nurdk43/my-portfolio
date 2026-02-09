@@ -7,6 +7,7 @@ export const Footer = () => {
       <div className="alt-icerik">
         <p className="alt-metin">© {profileData.name} 🩷</p>
         <SocialLinks sosyalMedya={profileData.social} email={profileData.email} variant="text" />
+        <p className="alt-yapimci">Built with  by Ayşenur Dik</p>
       </div>
     </footer>
   )

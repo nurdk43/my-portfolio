@@ -265,12 +265,12 @@ body {
 /* Hero Bölümü Stilleri */
 
 .ana-bolum {
-  min-height: 100%;
+  flex: 1;
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 60px 16px;
   background: #f5f7fa;
   position: relative;
   overflow: hidden;
@@ -634,8 +634,8 @@ body {
   }
 
   .profil-foto {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -1287,6 +1287,16 @@ body {
   color: #9ca3af;
 }
 
+.alt-yapimci {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.dark .alt-yapimci {
+  color: #6b7280;
+}
+
 .sosyal-medya-text {
   display: flex;
   flex-wrap: wrap;
@@ -1314,11 +1324,11 @@ body {
 
 .ana-icerik {
   min-height: 100vh;
-  height: 100vh;
   background: #ffffff;
   transition: background 0.5s ease, color 0.5s ease;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .ana-icerik>.ust-menu {
@@ -1329,11 +1339,16 @@ body {
   flex-shrink: 0;
 }
 
+/* AnimatePresence wrapper - sayfa geçişi için */
 .ana-icerik>div:not(.ust-menu):not(.alt-bolum) {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
 }
 
+/* Sayfa içeriği */
 .ana-icerik>div:not(.ust-menu):not(.alt-bolum)>* {
   flex: 1;
   display: flex;
