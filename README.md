@@ -1,4 +1,4 @@
-# 🌸 Ayşenur Dik - Kişisel Portföy
+# Ayşenur Dik - Kişisel Portföy
 
 > Modern, animasyonlu ve responsive kişisel portföy web sitesi
 
@@ -95,11 +95,5 @@ Framer Motion kullanılarak geliştirilmiş parıltılı (shimmer) sayfa geçiş
 ## 👩‍💻 Geliştirici
 
 **Ayşenur Dik**
-
-- 🔗 [GitHub](https://github.com/nurdk43)
-- 💼 [LinkedIn](https://linkedin.com/in/aysenurdik)
-- 📧 aysenurdik@outlook.com
-
 ---
-
 <p align="center">Built with 💕 by Ayşenur Dik</p>
