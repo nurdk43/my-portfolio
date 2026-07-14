@@ -1,7 +1,6 @@
 // Yetenekler Bölümü - Basit ve hızlı animasyonlar
 import { DilKullan } from '../../context/DilContext.jsx'
 import skillsData from '../../data/yetenekler.json'
-import { YetenekCubugu } from '../ui/YetenekCubugu.jsx'
 import { motion } from 'framer-motion'
 
 export const Yetenekler = () => {
@@ -33,9 +32,16 @@ export const Yetenekler = () => {
               }}
             >
               <h3 className="yetenek-baslik">{kategori.category[dil]}</h3>
-              <div className="yetenek-liste">
+              <div className="yetenek-liste-yeni">
                 {kategori.items.map((yetenek, idx) => (
-                  <YetenekCubugu key={idx} seviye={yetenek.level} isim={yetenek.name} />
+                  <motion.span
+                    key={idx}
+                    className="yetenek-etiket-yeni"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  >
+                    {yetenek.name}
+                  </motion.span>
                 ))}
               </div>
             </motion.div>
@@ -45,3 +51,4 @@ export const Yetenekler = () => {
     </motion.section>
   )
 }
+

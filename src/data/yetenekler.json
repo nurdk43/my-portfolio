@@ -49,6 +49,16 @@
         "icon": ""
       },
       {
+        "name": "C#",
+        "level": 85,
+        "icon": ""
+      },
+      {
+        "name": ".NET",
+        "level": 80,
+        "icon": ""
+      },
+      {
         "name": "Python",
         "level": 70,
         "icon": ""
@@ -74,6 +84,11 @@
       {
         "name": "MongoDB",
         "level": 50,
+        "icon": ""
+      },
+      {
+        "name": "MS SQL",
+        "level": 80,
         "icon": ""
       }
     ]

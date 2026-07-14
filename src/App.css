@@ -1873,3 +1873,44 @@ body,
   display: flex;
   justify-content: center;
 }
+
+/* Yetenekler Yeni Etiket Stilleri */
+.yetenek-liste-yeni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.yetenek-etiket-yeni {
+  padding: 10px 20px;
+  background-color: #fdf2f8;
+  color: #ec4899;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid rgba(244, 114, 182, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(244, 114, 182, 0.05);
+}
+
+.yetenek-etiket-yeni:hover {
+  background-color: #ec4899;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(244, 114, 182, 0.25);
+  border-color: transparent;
+}
+
+.dark .yetenek-etiket-yeni {
+  background-color: rgba(244, 114, 182, 0.08);
+  color: #f472b6;
+  border-color: rgba(244, 114, 182, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark .yetenek-etiket-yeni:hover {
+  background-color: #ec4899;
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(244, 114, 182, 0.4);
+}
