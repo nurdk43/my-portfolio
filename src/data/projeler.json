@@ -13,7 +13,7 @@
     "technologies": [
       "Dart",
       "React",
-      "Notecs",
+      "Node.js",
       "PostgreSQL"
     ],
     "category": "Mobil",
@@ -120,6 +120,8 @@
     "image": "/images/kutuphane.jpg",
     "technologies": [
       "React",
+      "Node.js",
+      "MongoDB",
       "TailwindCSS",
       "React Router DOM"
     ],
