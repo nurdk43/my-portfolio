@@ -7,6 +7,7 @@ export const ProjeKarti = ({ proje, dil, cevir, onClick }) => {
   const description = proje.description?.[dil] || proje.description || proje.aciklama?.[dil] || proje.aciklama
   const technologies = proje.technologies || proje.teknolojiler || []
   const githubUrl = proje.githubUrl || proje.githubLink
+  const demoUrl = proje.demoUrl || proje.demoLink
 
   return (
     <div className="proje-kart" onClick={onClick}>
@@ -34,7 +35,7 @@ export const ProjeKarti = ({ proje, dil, cevir, onClick }) => {
         )}
       </div>
 
-      {/* GitHub butonu */}
+      {/* Alt Butonlar */}
       <div className="kart-alt">
         {githubUrl && (
           <a
@@ -42,11 +43,25 @@ export const ProjeKarti = ({ proje, dil, cevir, onClick }) => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()} //butona tıklayınca sadece link çalışır, modal açılmaz
-            className="buton-link-tam"
+            className={demoUrl ? "buton-link" : "buton-link-tam"}
           >
             <button className="buton-ana">
               <Github className="buton-ikon" />
               {cevir('projects.github') || 'GitHub'}
+            </button>
+          </a>
+        )}
+        {demoUrl && (
+          <a
+            href={demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()} //butona tıklayınca sadece link çalışır, modal açılmaz
+            className={githubUrl ? "buton-link" : "buton-link-tam"}
+          >
+            <button className="buton-canli">
+              <ExternalLink className="buton-ikon" />
+              {cevir('projects.liveDemo') || 'Live Demo'}
             </button>
           </a>
         )}

@@ -16,15 +16,15 @@ export const Navbar = () => {
 
   return (
     <header className="ust-menu">
-      <motion.div 
+      <motion.div
         className="icerik-kapsayici"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="menu-duzen">
-          <motion.button 
-            onClick={() => sayfaGit('/')} 
+          <motion.button
+            onClick={() => sayfaGit('/')}
             className="logo-metin-buton"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

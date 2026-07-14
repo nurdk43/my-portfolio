@@ -1,6 +1,6 @@
 // Proje Detay Modalı
 
-import { X, Github } from 'lucide-react'
+import { X, Github, ExternalLink } from 'lucide-react'
 
 export const Modal = ({ proje, acik, kapat, dil, cevir }) => {
   if (!acik) return null
@@ -44,19 +44,34 @@ export const Modal = ({ proje, acik, kapat, dil, cevir }) => {
             </div>
           )}
 
-          {/* GitHub linki */}
+          {/* Butonlar */}
           <div className="modal-butonlar">
-            <a
-              href={proje.githubUrl || proje.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="modal-buton-link"
-            >
-              <button className="buton-ana">
-                <Github className="buton-ikon" />
-                {cevir('projects.github') || 'GitHub'}
-              </button>
-            </a>
+            {(proje.githubUrl || proje.githubLink) && (
+              <a
+                href={proje.githubUrl || proje.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modal-buton-link"
+              >
+                <button className="buton-ana">
+                  <Github className="buton-ikon" />
+                  {cevir('projects.github') || 'GitHub'}
+                </button>
+              </a>
+            )}
+            {(proje.demoUrl || proje.demoLink) && (
+              <a
+                href={proje.demoUrl || proje.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modal-buton-link"
+              >
+                <button className="buton-canli">
+                  <ExternalLink className="buton-ikon" />
+                  {cevir('projects.liveDemo') || 'Live Demo'}
+                </button>
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -83,5 +83,49 @@
     "githubUrl": "https://github.com/nurdk43/Routella",
     "demoUrl": null,
     "isFeatured": false
+  },
+  {
+    "id": 5,
+    "title": {
+      "tr": "Gym Management System",
+      "en": "Gym Management System"
+    },
+    "description": {
+      "tr": "Admin, antrenör ve üye panelleri içeren kapsamlı spor salonu yönetim sistemi. Üyelik yönetimi, ders programı ve ödeme takibi özelliklerini içerir.",
+      "en": "Comprehensive gym management system with admin, trainer, and member panels. Features include membership management, class scheduling, and payment tracking."
+    },
+    "image": "/images/gym-pro.jpg",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "TailwindCSS"
+    ],
+    "category": "Web",
+    "githubUrl": "https://github.com/nurdk43/gym-management",
+    "demoUrl": null,
+    "isFeatured": false
+  },
+  {
+    "id": 6,
+    "title": {
+      "tr": "Kütüphane Sistemi",
+      "en": "Library System"
+    },
+    "description": {
+      "tr": "Kullanıcıların kitapları arayabileceği, türlerine göre filtreleyebileceği, kitap detaylarını (sayfa sayısı, stok durumu) görüntüleyebileceği ve ödünç alma işlemlerini gerçekleştirebileceği modern ve kullanıcı dostu bir kütüphane yönetim sistemi.",
+      "en": "A modern and user-friendly library management system where users can search for books, filter by categories, view book details (page count, stock status), and borrow books."
+    },
+    "image": "/images/kutuphane.jpg",
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "React Router DOM"
+    ],
+    "category": "Web",
+    "githubUrl": "https://github.com/aysenurdkk/kutuphane-sistemi",
+    "demoUrl": "https://kutuphane-sistemi-frontend.vercel.app/",
+    "isFeatured": false
   }
 ]
